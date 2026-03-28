@@ -1,0 +1,20 @@
+{
+  "name": "FuelFlow Tracker",
+  "short_name": "FuelFlow",
+  "start_url": "/?access=granted",
+  "display": "standalone",
+  "background_color": "#0a0b0e",
+  "theme_color": "#0a0b0e",
+  "icons": [
+    {
+      "src": "https://i.ibb.co.com/KxSxp4VV/ya-allah.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://i.ibb.co.com/KxSxp4VV/ya-allah.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
