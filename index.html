@@ -1,30 +1,25 @@
 <!DOCTYPE html>
-<html lang="id">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>FuelFlow Tracker</title>
-  
-  <link rel="icon" type="image/png" href="https://i.ibb.co.com/KxSxp4VV/ya-allah.png">
-  
   <style>
-    body, html {
-      margin: 0; padding: 0; height: 100%; width: 100%;
-      overflow: hidden; background-color: #0a0b0e;
+    body, html { margin: 0; padding: 0; height: 100%; width: 100%; overflow: hidden; background: #0a0b0e; }
+    
+    /* Bungkus Iframe agar bisa dipotong */
+    .wrapper {
+      position: absolute;
+      top: -45px; /* Tarik ke atas untuk sembunyikan banner atas */
+      left: 0;
+      width: 100%;
+      height: calc(100% + 45px); /* Tambah tinggi biar nggak kepotong di bawah */
     }
-    iframe {
-      position: absolute; top: 0; left: 0;
-      width: 100%; height: 100%; border: none;
-    }
+    
+    iframe { width: 100%; height: 100%; border: none; }
   </style>
 </head>
 <body>
-
-  <iframe 
-    src="https://script.google.com/macros/s/AKfycbw5Fe7Bq8MD8yy-gitzTvOn_xJDUTdbhJ88ad6XMBLCldsEb21V9jH6ZROzr4MwtsmJ/exec" 
-    allow="camera; microphone; geolocation" 
-    title="FuelFlow System">
-  </iframe>
-
+  <div class="wrapper">
+    <iframe src="https://script.google.com/macros/s/AKfycbw5Fe7Bq8MD8yy-gitzTvOn_xJDUTdbhJ88ad6XMBLCldsEb21V9jH6ZROzr4MwtsmJ/exec"></iframe>
+  </div>
 </body>
 </html>
